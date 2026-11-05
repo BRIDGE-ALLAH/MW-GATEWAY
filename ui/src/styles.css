@@ -13,8 +13,8 @@
 	--primary-strong: #5f2b91;
 	--accent: #7a6300;
 	--accent-soft: rgba(122, 99, 0, 0.13);
-	--pink: #ff007a;
-	--cyan: #00d4ff;
+	--pink: #d4005a;
+	--cyan: #0099b3;
 	--moon: #7a3bb3;
 	--warn: #8a5a00;
 	--warn-bg: #f6e9c9;
@@ -27,8 +27,8 @@
 	--shadow: 3px 3px 0 rgba(7, 6, 11, 0.16);
 	--shadow-popover: 0 6px 14px rgba(7, 6, 11, 0.12);
 	--shadow-drawer: -8px 0 18px rgba(7, 6, 11, 0.12);
-	--pink-glow: rgba(255, 0, 122, 0.25);
-	--cyan-glow: rgba(0, 212, 255, 0.25);
+	--pink-glow: rgba(212, 0, 90, 0.18);
+	--cyan-glow: rgba(0, 153, 179, 0.18);
 	--accent-glow: rgba(122, 99, 0, 0.25);
 	--font-sans: 'Geist Sans', 'Inter', 'Aptos', 'Segoe UI Variable', 'Segoe UI', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 	--font-display: 'Impact', 'Anton', 'Arial Black', 'Franklin Gothic Heavy', sans-serif;

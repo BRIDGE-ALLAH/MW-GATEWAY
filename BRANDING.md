@@ -10,6 +10,8 @@ It belongs to the wider Moonwitness XV vision. It does not replace ARSY as the e
 
 ## Narrative
 
+**Supporting line:** Configured Connectivity. Observable Operations. Human Accountability.
+
 AI systems are becoming networks: models call tools, agents collaborate, and services exchange information across organizational boundaries. Those connections need clear routes, explicit policies, and operational visibility.
 
 Moonwitness Gateway provides that boundary. It helps teams connect intelligence while keeping the path inspectable and the responsibility visible.
@@ -33,15 +35,7 @@ Applied to gateway engineering: retain provenance, make configuration reviewable
 
 The design direction is **evidence-first moonpunk with zine-inspired contrast**: deep ink surfaces, paper-like light surfaces, a crescent-and-orbit identity, sharp typographic hierarchy, and clear operational labels.
 
-| Token | Value | Use |
-|---|---|---|
-| Ink | `#07060b` | Dark canvas |
-| Night surface | `#13101d` | Dark UI surfaces |
-| Paper | `#f7f4ec` | Light canvas and high-contrast text |
-| Signal yellow | `#ffd400` | Primary highlight |
-| Signal pink | `#ff007a` | Secondary signal |
-| Signal cyan | `#00d4ff` | Focus and connectivity signal |
-| Moon purple | `#9d4edd` | Product identity and supporting accent |
+The canonical two-theme palette and semantic color values are specified in **Color application** below. Use those tokens consistently in UI, documentation artwork, and future assets.
 
 Use the colors as a system, not decoration. Status and meaning must never depend on color alone. Maintain readable contrast, visible focus, keyboard navigation, and descriptive labels.
 
