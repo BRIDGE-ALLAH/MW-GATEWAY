@@ -173,7 +173,7 @@ Use this capitalization in product-facing documentation, UI titles, diagrams, re
 **Connect Intelligence. Preserve Accountability.**
 
 ### Supporting line
-**Secure Connectivity. Observable Intelligence. Accountable Technology.**
+**Configured Connectivity. Observable Operations. Human Accountability.**
 
 ### Brand narrative
 
