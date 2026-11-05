@@ -37,7 +37,9 @@ The design direction is **evidence-first moonpunk with zine-inspired contrast**:
 |---|---|---|---|
 | Background | `#07060b` | `#f7f4ec` | Page canvas |
 | Surface | `#13101d` | `#ede8dc` | UI panels |
-| Surface 2 | `#1b172a` | `#e3ddd0` | Nested panels |\n| Text | `#f7f4ec` | `#07060b` | Primary reading text |\n| Muted text | `#9e96b0` | `#4a4557` | Secondary reading text |
+| Surface 2 | `#1b172a` | `#e3ddd0` | Nested panels |
+| Text | `#f7f4ec` | `#07060b` | Primary reading text |
+| Muted text | `#9e96b0` | `#4a4557` | Secondary reading text |
 | Signal yellow | `#ffd400` | `#7a6300` | Primary highlight |
 | Signal pink | `#ff007a` | `#d4005a` | Secondary signal |
 | Signal cyan | `#00d4ff` | `#0099b3` | Focus and connectivity signal |
