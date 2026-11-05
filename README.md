@@ -142,7 +142,8 @@ This repository is a **Moonwitness-branded fork** of [agentgateway/agentgateway]
 
 ## Documentation map
 - [README](README.md) — product overview and getting started links
-- [BLUEPRINT](BLUEPRINT.md) — product boundaries, architecture, brand, and design contract
+- [BLUEPRINT](BLUEPRINT.md) — product boundaries, architecture, and technical design contract
+- [BRANDING](BRANDING.md) — narrative, Moonwitness XV principles, visual tokens, and asset usage
 - [Design documents](design/README.md) — upstream design-document contribution process
 - [Architecture notes](architecture/README.md) — inherited architecture references
 - [Examples](examples/) — deployment and configuration examples
