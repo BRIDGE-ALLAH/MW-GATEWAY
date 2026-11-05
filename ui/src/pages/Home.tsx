@@ -139,8 +139,8 @@ export function HomePage() {
 			>
 				<section className="startup-panel">
 					<div className="startup-copy">
-						<h2 id="startup-title">Welcome to Agentgateway</h2>
-						<p>Choose what this gateway will serve. Anything skipped can be enabled later.</p>
+						<h2 id="startup-title">Welcome to Moonwitness Gateway</h2>
+						<p>Choose the gateway surfaces you need. You can configure additional routes and policies as your deployment evolves.</p>
 					</div>
 
 					{pageDataError ? (

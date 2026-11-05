@@ -1,35 +1,38 @@
 :root {
 	color-scheme: light;
-	--bg: #f8f9fb;
-	--surface: #ffffff;
-	--surface-2: #f3f4f6;
-	--surface-3: #eef0f4;
-	--text: #151927;
-	--muted: #667085;
-	--line: #e5e7eb;
-	--line-strong: #d1d5db;
-	--placeholder: #98a2b3;
-	--primary: #8023c3;
-	--primary-strong: #681aa2;
-	--accent: #8023c3;
-	--accent-soft: #f4e8ff;
-	--warn: #b7791f;
-	--warn-bg: #fff7e6;
-	--info: #175cd3;
-	--info-bg: #eff8ff;
+	--bg: #f7f4ec;
+	--surface: #ede8dc;
+	--surface-2: #e3ddd0;
+	--surface-3: #d9d1c4;
+	--text: #07060b;
+	--muted: #4a4557;
+	--line: rgba(7, 6, 11, 0.13);
+	--line-strong: rgba(7, 6, 11, 0.28);
+	--placeholder: #756d7c;
+	--primary: #7a3bb3;
+	--primary-strong: #5f2b91;
+	--accent: #7a6300;
+	--accent-soft: rgba(122, 99, 0, 0.13);
+	--pink: #ff007a;
+	--cyan: #00d4ff;
+	--moon: #7a3bb3;
+	--warn: #8a5a00;
+	--warn-bg: #f6e9c9;
+	--info: #176f9f;
+	--info-bg: #dceef7;
 	--bad: #b42318;
-	--bad-bg: #fff0ee;
-	--ok: #027a48;
-	--ok-bg: #ecfdf3;
-	--shadow: 0 1px 2px rgb(16 24 40 / 0.035);
-	--shadow-popover: 0 6px 14px rgb(16 24 40 / 0.08);
-	--shadow-drawer: -8px 0 18px rgb(16 24 40 / 0.08);
-	--font-sans:
-		'Geist Sans', 'Aptos', 'Segoe UI Variable', 'Segoe UI', ui-sans-serif, system-ui, -apple-system,
-		BlinkMacSystemFont, sans-serif;
-	--mono:
-		'DejaVu Sans Mono', 'Liberation Mono', 'SFMono-Regular', 'Cascadia Code', 'Roboto Mono',
-		Consolas, monospace;
+	--bad-bg: #f9dfda;
+	--ok: #087443;
+	--ok-bg: #dcefe3;
+	--shadow: 3px 3px 0 rgba(7, 6, 11, 0.16);
+	--shadow-popover: 0 6px 14px rgba(7, 6, 11, 0.12);
+	--shadow-drawer: -8px 0 18px rgba(7, 6, 11, 0.12);
+	--pink-glow: rgba(255, 0, 122, 0.25);
+	--cyan-glow: rgba(0, 212, 255, 0.25);
+	--accent-glow: rgba(122, 99, 0, 0.25);
+	--font-sans: 'Geist Sans', 'Inter', 'Aptos', 'Segoe UI Variable', 'Segoe UI', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--font-display: 'Impact', 'Anton', 'Arial Black', 'Franklin Gothic Heavy', sans-serif;
+	--mono: 'JetBrains Mono', 'DejaVu Sans Mono', 'Liberation Mono', 'SFMono-Regular', 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
 	font-family: var(--font-sans);
 }
 
@@ -56,30 +59,36 @@ samp,
 
 :root[data-theme='dark'] {
 	color-scheme: dark;
-	--bg: #030712;
-	--surface: #10141f;
-	--surface-2: #1c2029;
-	--surface-3: #242938;
-	--text: #f2f5f8;
-	--muted: #9ca3af;
-	--line: #1f2937;
-	--line-strong: #374151;
-	--placeholder: #6b7280;
-	--primary: #a855f7;
-	--primary-strong: #c084fc;
-	--accent: #a855f7;
-	--accent-soft: #251333;
-	--warn: #f2bd5c;
-	--warn-bg: #2b2315;
-	--info: #84caff;
-	--info-bg: #102235;
-	--bad: #ff8a7a;
-	--bad-bg: #2c1918;
-	--ok: #63d799;
-	--ok-bg: #14251b;
-	--shadow: 0 1px 2px rgb(0 0 0 / 0.16);
-	--shadow-popover: 0 8px 18px rgb(0 0 0 / 0.24);
-	--shadow-drawer: -8px 0 18px rgb(0 0 0 / 0.22);
+	--bg: #07060b;
+	--surface: #13101d;
+	--surface-2: #1b172a;
+	--surface-3: #28213a;
+	--text: #f7f4ec;
+	--muted: #9e96b0;
+	--line: rgba(247, 244, 236, 0.13);
+	--line-strong: rgba(247, 244, 236, 0.32);
+	--placeholder: #777083;
+	--primary: #9d4edd;
+	--primary-strong: #bd78ee;
+	--accent: #ffd400;
+	--accent-soft: rgba(255, 212, 0, 0.12);
+	--pink: #ff007a;
+	--cyan: #00d4ff;
+	--moon: #9d4edd;
+	--warn: #ffd166;
+	--warn-bg: #332a13;
+	--info: #65d8ef;
+	--info-bg: #102c34;
+	--bad: #ff7b77;
+	--bad-bg: #35191b;
+	--ok: #00e676;
+	--ok-bg: #103322;
+	--shadow: 3px 3px 0 #000000;
+	--shadow-popover: 0 8px 18px rgba(0, 0, 0, 0.38);
+	--shadow-drawer: -8px 0 18px rgba(0, 0, 0, 0.32);
+	--pink-glow: rgba(255, 0, 122, 0.45);
+	--cyan-glow: rgba(0, 212, 255, 0.45);
+	--accent-glow: rgba(255, 212, 0, 0.45);
 }
 
 ::selection {
@@ -106,7 +115,11 @@ body {
 body {
 	margin: 0;
 	min-width: 320px;
-	background: var(--bg);
+	background-color: var(--bg);
+	background-image:
+		radial-gradient(circle at 12% 0%, color-mix(in srgb, var(--pink) 5%, transparent), transparent 36%),
+		radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--cyan) 5%, transparent), transparent 34%);
+	background-attachment: fixed;
 	color: var(--text);
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased;
@@ -166,12 +179,25 @@ a {
 }
 
 .brand {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	min-height: 44px;
-	padding: 0 8px 12px;
+	min-height: 52px;
+	margin-bottom: 8px;
+	padding: 2px 8px 14px;
+	border-bottom: 2px solid var(--line);
+}
+
+.brand::after {
+	position: absolute;
+	bottom: -2px;
+	left: 8px;
+	width: 54px;
+	height: 3px;
+	background: linear-gradient(90deg, var(--accent) 0 52%, var(--pink) 52% 78%, var(--cyan) 78%);
+	content: "";
 }
 
 .brand small {

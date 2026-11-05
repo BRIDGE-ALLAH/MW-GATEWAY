@@ -56,18 +56,13 @@ type NavItemConfig = {
 const projectLinks = [
 	{
 		label: 'GitHub',
-		href: 'https://github.com/agentgateway/agentgateway',
+		href: 'https://github.com/BRIDGE-ALLAH/MW-GATEWAY',
 		icon: GitFork
 	},
 	{
 		label: 'Documentation',
-		href: 'https://agentgateway.dev/docs/standalone/latest/',
+		href: 'https://github.com/BRIDGE-ALLAH/MW-GATEWAY#documentation',
 		icon: Globe
-	},
-	{
-		label: 'Feedback',
-		href: 'https://github.com/agentgateway/agentgateway/issues/new?title=UI%20feedback%3A%20&body=Thanks%20for%20trying%20the%20agentgateway%20UI.%0A%0AWhat%20happened%3F%0A%0AWhat%20did%20you%20expect%20instead%3F%0A%0AAny%20screenshots%2C%20logs%2C%20or%20config%20that%20would%20help%3F',
-		icon: MessageSquarePlus
 	}
 ] as const;
 
@@ -132,9 +127,9 @@ export function Shell() {
 	return (
 		<div className="app-shell">
 			<aside className="sidebar">
-				<Link to="/" className="brand" aria-label="agentgateway home">
-					<img className="brand-logo brand-logo-light" src={logoLight} alt="agentgateway" />
-					<img className="brand-logo brand-logo-dark" src={logoDark} alt="agentgateway" />
+				<Link to="/" className="brand" aria-label="Moonwitness Gateway home">
+					<img className="brand-logo brand-logo-light" src={logoLight} alt="Moonwitness Gateway" />
+					<img className="brand-logo brand-logo-dark" src={logoDark} alt="Moonwitness Gateway" />
 					{runtime.data?.build.version && (
 						<small title={runtime.data.build.gitRevision}>{runtime.data.build.version}</small>
 					)}
