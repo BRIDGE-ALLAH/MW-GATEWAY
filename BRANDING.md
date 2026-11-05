@@ -33,15 +33,15 @@ Applied to gateway engineering: retain provenance, make configuration reviewable
 
 The design direction is **evidence-first moonpunk with zine-inspired contrast**: deep ink surfaces, paper-like light surfaces, a crescent-and-orbit identity, sharp typographic hierarchy, and clear operational labels.
 
-| Token | Value | Use |
+| Token | Dark theme | Light theme | Use |
 |---|---|---|
-| Ink | `#07060b` | Dark canvas |
-| Night surface | `#13101d` | Dark UI surfaces |
-| Paper | `#f7f4ec` | Light canvas and high-contrast text |
-| Signal yellow | `#ffd400` | Primary highlight |
-| Signal pink | `#ff007a` | Secondary signal |
-| Signal cyan | `#00d4ff` | Focus and connectivity signal |
-| Moon purple | `#9d4edd` | Product identity and supporting accent |
+| Background | `#07060b` | `#f7f4ec` | Page canvas |
+| Surface | `#13101d` | `#ede8dc` | UI panels |
+| Surface 2 | `#1b172a` | `#e3ddd0` | Nested panels |\n| Text | `#f7f4ec` | `#07060b` | Primary reading text |\n| Muted text | `#9e96b0` | `#4a4557` | Secondary reading text |
+| Signal yellow | `#ffd400` | `#7a6300` | Primary highlight |
+| Signal pink | `#ff007a` | `#d4005a` | Secondary signal |
+| Signal cyan | `#00d4ff` | `#0099b3` | Focus and connectivity signal |
+| Moon purple | `#9d4edd` | `#7a3bb3` | Product identity and supporting accent |
 
 Use the colors as a system, not decoration. Status and meaning must never depend on color alone. Maintain readable contrast, visible focus, keyboard navigation, and descriptive labels.
 
