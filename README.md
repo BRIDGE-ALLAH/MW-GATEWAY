@@ -1,8 +1,8 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/banner-light.svg">
-    <source media="(prefers-color-scheme: light)" srcset="img/banner-dark.svg">
-    <img src="img/banner-light.svg" alt="Moonwitness Gateway — Connect Intelligence. Preserve Accountability." width="820">
+    <source media="(prefers-color-scheme: dark)" srcset="img/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="img/banner-light.svg">
+    <img src="img/banner-dark.svg" alt="Moonwitness Gateway — Connect Intelligence. Preserve Accountability." width="820">
   </picture>
   <p><strong>Connect Intelligence. Preserve Accountability.</strong></p>
   <p>
