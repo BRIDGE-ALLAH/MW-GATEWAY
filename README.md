@@ -127,7 +127,8 @@ The palette is based on the canonical Moonwitness tokens:
 | Pink | `#ff007a` | Secondary accent |
 | Cyan | `#00d4ff` | Signal and focus accent |
 | Moon purple | `#9d4edd` | Identity and supporting accent |
-| Surface (light) | `#ede8dc` | Light-theme panels and sidebar |\n| Chalk | `#f7f4ec` | High-contrast text |
+| Surface (light) | `#ede8dc` | Light-theme panels and sidebar |
+| Chalk | `#f7f4ec` | High-contrast text |
 
 Color is never the only carrier of status or meaning. Navigation, forms, errors, policy states, and operational information remain text-readable and keyboard accessible.
 
