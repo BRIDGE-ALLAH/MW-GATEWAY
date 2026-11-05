@@ -120,15 +120,13 @@ The dashboard follows the Moonwitness XV visual direction: **evidence-first moon
 The palette is based on the canonical Moonwitness tokens:
 
 | Token | Dark theme | Light theme | Role |
-|---|---|---|
+|---|---|---|---|
 | Background | `#07060b` | `#f7f4ec` | Page canvas |
 | Surface | `#13101d` | `#ede8dc` | Panels and sidebar |
 | Surface 2 | `#1b172a` | `#e3ddd0` | Secondary surfaces |\n| Text | `#f7f4ec` | `#07060b` | Primary reading text |\n| Muted text | `#9e96b0` | `#4a4557` | Secondary reading text |\n| Yellow | `#ffd400` | `#7a6300` | Primary accent and emphasis |
 | Pink | `#ff007a` | `#d4005a` | Secondary accent |
 | Cyan | `#00d4ff` | `#0099b3` | Signal and focus accent |
 | Moon purple | `#9d4edd` | `#7a3bb3` | Identity and supporting accent |
-| Surface (light) | `#ede8dc` | Light-theme panels and sidebar |
-| Chalk | `#f7f4ec` | High-contrast text |
 
 Color is never the only carrier of status or meaning. Navigation, forms, errors, policy states, and operational information remain text-readable and keyboard accessible.
 
