@@ -34,7 +34,7 @@ Applied to gateway engineering: retain provenance, make configuration reviewable
 The design direction is **evidence-first moonpunk with zine-inspired contrast**: deep ink surfaces, paper-like light surfaces, a crescent-and-orbit identity, sharp typographic hierarchy, and clear operational labels.
 
 | Token | Dark theme | Light theme | Use |
-|---|---|---|
+|---|---|---|---|
 | Background | `#07060b` | `#f7f4ec` | Page canvas |
 | Surface | `#13101d` | `#ede8dc` | UI panels |
 | Surface 2 | `#1b172a` | `#e3ddd0` | Nested panels |\n| Text | `#f7f4ec` | `#07060b` | Primary reading text |\n| Muted text | `#9e96b0` | `#4a4557` | Secondary reading text |
