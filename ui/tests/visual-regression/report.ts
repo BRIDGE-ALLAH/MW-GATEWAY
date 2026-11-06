@@ -137,6 +137,7 @@ export async function renderFrames(output: string) {
 		await page.goto(pathToFileURL(join(output, 'index.html')).href);
 		for (const row of rows) {
 			await page.selectOption('#page', row.name);
+			await page.selectOption('#viewport', row.viewport);
 			await page.selectOption('#theme', row.theme);
 			await page.waitForFunction(() =>
 				[...document.images].every(image => image.complete && image.naturalWidth > 0)
