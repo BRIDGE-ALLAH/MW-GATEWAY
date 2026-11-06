@@ -171,10 +171,10 @@
 		<details>
 			<summary>All Results and Capture Scope</summary>
 			<p>
-				These are full-page captures at 1280 × 720 desktop and 390 × 844 mobile viewports in pinned Linux
-				Chromium, each in light and dark color schemes. Both sides use the same fixtures, masks,
-				screenshot styles and browser. Passing results cover these tested routes and viewports; they do
-				not establish equivalence for every UI state or physical device.
+				These are full-page captures at 1280 × 720 desktop and 390 × 844 mobile viewports in pinned
+				Linux Chromium, each in light and dark color schemes. Both sides use the same fixtures,
+				masks, screenshot styles and browser. Passing results cover these tested routes and
+				viewports; they do not establish equivalence for every UI state or physical device.
 			</p>
 			<p>
 				<a href="results.json">Results and Source Identity</a>
@@ -240,7 +240,13 @@
 	});
 	for (const item of data.rows) {
 		const row = document.createElement('tr');
-		for (const value of [item.title, item.viewport, item.theme, item.status, item.exactBytes ? 'yes' : 'no']) {
+		for (const value of [
+			item.title,
+			item.viewport,
+			item.theme,
+			item.status,
+			item.exactBytes ? 'yes' : 'no'
+		]) {
 			const cell = document.createElement('td');
 			cell.textContent = value;
 			row.append(cell);
