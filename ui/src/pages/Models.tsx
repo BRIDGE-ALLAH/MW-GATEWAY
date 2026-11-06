@@ -751,7 +751,7 @@ function ModelEditor(props: {
 				<summary>Help</summary>
 				<div className="model-help-copy">
 					<p>
-						Agentgateway routes requests by matching an incoming model name, and then sending it to
+						Moonwitness Gateway routes requests by matching an incoming model name, and then sending it to
 						the configured model. The outgoing model can be passed through from the incoming model,
 						be transformed, or be a static model.
 					</p>
