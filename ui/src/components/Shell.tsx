@@ -61,7 +61,7 @@ const projectLinks = [
 	},
 	{
 		label: 'Documentation',
-		href: 'https://github.com/BRIDGE-ALLAH/MW-GATEWAY#documentation',
+		href: 'https://github.com/BRIDGE-ALLAH/MW-GATEWAY#documentation-map',
 		icon: Globe
 	}
 ] as const;

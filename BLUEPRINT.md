@@ -319,7 +319,7 @@ No phase is complete merely because files exist or a local build passes. Accepta
 - [ ] Generated assets and screenshots are reviewed in both themes.
 - [ ] Production readiness is not claimed without deployment-specific evidence.
 
-**Verification status of this branding patch:** source files are being updated; automated build, UI tests, and deployment validation must still be run in the project environment.
+**Verification status (2026-11-06):** the branding baseline and consistency revisions are merged into `main`, and the current README, blueprint, brand guide, UI metadata, theme tokens, wordmark sizing, and SVG asset source have been reviewed. GitHub currently reports no workflow runs or commit status checks for the reviewed `main` commit, so automated build, lint, and UI E2E results are **not verified**. Browser-rendered visual QA in both themes and responsive breakpoints is also **not yet verified**. Deployment validation remains deployment-specific and is outside the scope of a branding completion claim.
 
 ---
 
