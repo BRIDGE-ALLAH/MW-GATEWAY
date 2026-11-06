@@ -33,10 +33,7 @@ function prepare(phase: Phase) {
 	) {
 		throw new Error('Reference schema generation failed. See generate_schema_reference.log.');
 	}
-	const buildArgs =
-		phase === 'reference'
-			? ['exec', 'vite', 'build', '--mode', 'e2e']
-			: ['build', '--mode', 'e2e'];
+	const buildArgs = phase === 'reference' ? ['exec', 'vite', 'build', '--mode', 'e2e'] : ['build', '--mode', 'e2e'];
 	if (step(`build_${phase}`, 'pnpm', buildArgs, cwd)) {
 		throw new Error(`${phase} UI build failed. See build_${phase}.log.`);
 	}
