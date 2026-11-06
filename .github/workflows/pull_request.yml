@@ -303,3 +303,27 @@ jobs:
         echo -e '```\n' >> $GITHUB_STEP_SUMMARY
         echo -e '# GIE Conformance Timings\n' >> $GITHUB_STEP_SUMMARY
         cat controller/_test/ci-step-timings.log >> $GITHUB_STEP_SUMMARY
+
+  ui-visual-regression:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+    - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+      with:
+        node-version-file: ui/.nvmrc
+    - name: Compare desktop and mobile light/dark UI
+      working-directory: ui
+      env:
+        VISUAL_BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event_name == 'push' && github.event.before || github.event.repository.default_branch }}
+      run: node tests/visual-regression/compare.ts --base "$VISUAL_BASE"
+    - name: Upload visual regression report
+      if: always()
+      uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+      with:
+        name: ui-visual-regression-report
+        path: ui/tests/visual-regression/results.local
+        if-no-files-found: ignore
+        retention-days: 7
