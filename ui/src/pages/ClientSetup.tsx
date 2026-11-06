@@ -499,7 +499,7 @@ export AGENTGATEWAY_API_KEY=${JSON.stringify(args.apiKey)}  # Alternatively, typ
 		{
 			id: 'curl',
 			title: 'curl',
-			description: 'Send a chat completion request to agentgateway with curl.',
+			description: 'Send a chat completion request through Moonwitness Gateway with curl.',
 			icon: 'curl',
 			language: 'bash',
 			code: `curl ${JSON.stringify(completions)} ${continuation}
@@ -507,14 +507,14 @@ ${curlAuthorization}${curlMatchHeaders}  -H "Content-Type: application/json" ${c
   -d '{
     "model": "${args.model}",
     "messages": [
-      { "role": "user", "content": "Hello from agentgateway" }
+      { "role": "user", "content": "Hello from Moonwitness Gateway" }
     ]
   }'`
 		},
 		{
 			id: 'claude-code',
 			title: 'Claude Code',
-			description: 'Connect Claude Code to agentgateway using the Anthropic Messages API.',
+			description: 'Connect Claude Code to Moonwitness Gateway using the Anthropic Messages API.',
 			icon: 'claude',
 			language: 'bash',
 			code: `export ANTHROPIC_AUTH_TOKEN=${JSON.stringify(requiredApiKey)}
@@ -525,7 +525,7 @@ claude --model ${JSON.stringify(args.model)}`
 		{
 			id: 'claude-desktop',
 			title: 'Claude Desktop',
-			description: 'Connect Claude Desktop to agentgateway using third-party inference settings.',
+			description: 'Connect Claude Desktop to Moonwitness Gateway using third-party inference settings.',
 			icon: 'claude',
 			steps: [
 				<>
@@ -549,7 +549,7 @@ API Key: ${requiredApiKey}`
 		{
 			id: 'codex',
 			title: 'Codex CLI',
-			description: 'Connect Codex CLI to agentgateway with a custom model provider.',
+			description: 'Connect Codex CLI to Moonwitness Gateway with a custom model provider.',
 			icon: 'codex',
 			language: 'bash',
 			code: `export OPENAI_API_KEY=${JSON.stringify(requiredApiKey)}
@@ -566,7 +566,7 @@ codex --model "${args.model}" \\
 		{
 			id: 'opencode',
 			title: 'OpenCode',
-			description: 'Connect OpenCode to agentgateway.',
+			description: 'Connect OpenCode to Moonwitness Gateway.',
 			icon: 'opencode',
 			steps: [
 				<>
@@ -585,7 +585,7 @@ cat > opencode.json <<'EOF'
   "provider": {
     "agentgateway": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "Agentgateway",
+      "name": "Moonwitness Gateway",
       "options": {
         "baseURL": "${v1}"${openCodeApiKey}
       },
@@ -604,7 +604,7 @@ opencode`
 		{
 			id: 'pi',
 			title: 'Pi',
-			description: 'Connect Pi to agentgateway using the Responses API.',
+			description: 'Connect Pi to Moonwitness Gateway using the Responses API.',
 			icon: 'pi',
 			steps: [
 				<>
@@ -635,7 +635,7 @@ opencode`
 		{
 			id: 'goose',
 			title: 'Goose',
-			description: 'Connect Goose to agentgateway using its OpenAI provider.',
+			description: 'Connect Goose to Moonwitness Gateway using its OpenAI provider.',
 			icon: 'goose',
 			steps: [
 				<>
@@ -663,7 +663,7 @@ goose session`
 		{
 			id: 'cursor',
 			title: 'Cursor',
-			description: 'Connect Cursor to agentgateway using the OpenAI base URL override.',
+			description: 'Connect Cursor to Moonwitness Gateway using the OpenAI base URL override.',
 			icon: 'cursor',
 			steps: [
 				<>
@@ -685,7 +685,7 @@ Custom model: ${args.model}`
 		{
 			id: 'github-copilot',
 			title: 'GitHub Copilot',
-			description: 'Connect VS Code Copilot Business or Enterprise to agentgateway.',
+			description: 'Connect VS Code Copilot Business or Enterprise to Moonwitness Gateway.',
 			icon: 'copilot',
 			steps: [
 				<>
@@ -706,7 +706,7 @@ Custom model: ${args.model}`
 		{
 			id: 'continue',
 			title: 'Continue',
-			description: 'Connect Continue to agentgateway using an OpenAI-compatible model.',
+			description: 'Connect Continue to Moonwitness Gateway using an OpenAI-compatible model.',
 			icon: 'continue',
 			steps: [
 				<>
@@ -730,7 +730,7 @@ models:
 		{
 			id: 'windsurf',
 			title: 'Windsurf',
-			description: 'Connect Windsurf to agentgateway using its HTTP proxy setting.',
+			description: 'Connect Windsurf to Moonwitness Gateway using its HTTP proxy setting.',
 			icon: 'windsurf',
 			steps: [
 				<>
@@ -749,7 +749,7 @@ models:
 		{
 			id: 'openai-js',
 			title: 'OpenAI JavaScript SDK',
-			description: 'Call agentgateway using the OpenAI JavaScript SDK.',
+			description: 'Call Moonwitness Gateway using the OpenAI JavaScript SDK.',
 			icon: 'codex',
 			provider: 'openai',
 			language: 'ts',
@@ -762,7 +762,7 @@ const client = new OpenAI({
 
 const response = await client.chat.completions.create({
   model: "${args.model}",
-  messages: [{ role: "user", content: "Hello from agentgateway" }],
+  messages: [{ role: "user", content: "Hello from Moonwitness Gateway" }],
 });
 
 console.log(response.choices[0]?.message?.content);`
@@ -770,7 +770,7 @@ console.log(response.choices[0]?.message?.content);`
 		{
 			id: 'openai-python',
 			title: 'OpenAI Python SDK',
-			description: 'Call agentgateway using the OpenAI Python SDK.',
+			description: 'Call Moonwitness Gateway using the OpenAI Python SDK.',
 			icon: 'codex',
 			provider: 'openai',
 			language: 'python',
@@ -783,7 +783,7 @@ client = OpenAI(
 
 response = client.chat.completions.create(
     model="${args.model}",
-    messages=[{"role": "user", "content": "Hello from agentgateway"}],
+    messages=[{"role": "user", "content": "Hello from Moonwitness Gateway"}],
 )
 
 print(response.choices[0].message.content)`
