@@ -13,7 +13,7 @@ export function LoginPage() {
 	const query = new URLSearchParams({ returnTo });
 
 	useEffect(() => {
-		document.title = 'Sign in · Agentgateway';
+		document.title = 'Sign in · Moonwitness Gateway';
 		document.documentElement.dataset.theme =
 			localStorage.getItem('theme') ??
 			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -23,8 +23,8 @@ export function LoginPage() {
 		<main className="login-page">
 			<section className="login-card" aria-labelledby="login-heading">
 				<div className="login-brand">
-					<img className="brand-logo brand-logo-light" src={logoLight} alt="agentgateway" />
-					<img className="brand-logo brand-logo-dark" src={logoDark} alt="agentgateway" />
+					<img className="brand-logo brand-logo-light" src={logoLight} alt="Moonwitness Gateway" />
+					<img className="brand-logo brand-logo-dark" src={logoDark} alt="Moonwitness Gateway" />
 				</div>
 				<h1 id="login-heading">Sign in</h1>
 				<p>Sign in with your organization’s identity provider to continue.</p>
