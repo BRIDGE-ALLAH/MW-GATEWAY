@@ -176,7 +176,7 @@ export function CostsPage() {
 				) : (
 					<EmptyState
 						title="Using the embedded cost catalog"
-						description="Agentgateway includes a built-in catalog of model pricing. Refresh the base catalog to get the latest pricing data."
+						description="Moonwitness Gateway includes a built-in catalog of model pricing. Refresh the base catalog to get the latest pricing data."
 					/>
 				)}
 			</Panel>
