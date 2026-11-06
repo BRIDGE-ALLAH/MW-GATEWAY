@@ -1002,7 +1002,7 @@ function downloadAnalyticsCsv(buckets: AnalyticsTimeBucket[], groupBy: Analytics
 	const url = URL.createObjectURL(blob);
 	const anchor = document.createElement('a');
 	anchor.href = url;
-	anchor.download = `agentgateway-analytics-${new Date().toISOString().slice(0, 10)}.csv`;
+	anchor.download = `moonwitness-gateway-analytics-${new Date().toISOString().slice(0, 10)}.csv`;
 	anchor.click();
 	URL.revokeObjectURL(url);
 }
@@ -2698,7 +2698,7 @@ function downloadJson(value: unknown) {
 	const url = URL.createObjectURL(blob);
 	const anchor = document.createElement('a');
 	anchor.href = url;
-	anchor.download = 'agentgateway-log.json';
+	anchor.download = 'moonwitness-gateway-log.json';
 	anchor.click();
 	URL.revokeObjectURL(url);
 }
