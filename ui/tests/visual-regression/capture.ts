@@ -23,7 +23,14 @@ function prepare(phase: Phase) {
 	) {
 		throw new Error(`${phase} dependency installation failed. See install_${phase}.log.`);
 	}
-	if (step(`build_${phase}`, 'pnpm', ['build', '--mode', 'e2e'], cwd)) {
+	// The reference build is used only to render baseline screenshots. Skip its
+	// TypeScript check so unrelated pre-existing type errors on the base commit
+	// cannot prevent a visual comparison; the candidate still runs the full build.
+	const buildArgs =
+		phase === 'reference'
+			? ['exec', 'vite', 'build', '--mode', 'e2e']
+			: ['build', '--mode', 'e2e'];
+	if (step(`build_${phase}`, 'pnpm', buildArgs, cwd)) {
 		throw new Error(`${phase} UI build failed. See build_${phase}.log.`);
 	}
 }
