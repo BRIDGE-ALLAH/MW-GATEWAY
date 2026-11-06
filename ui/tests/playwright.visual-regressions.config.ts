@@ -42,6 +42,28 @@ export default defineConfig({
 		{
 			name: 'dark',
 			use: { ...devices['Desktop Chrome'], colorScheme: 'dark' }
+		},
+		{
+			name: 'mobile-light',
+			use: {
+				...devices['Desktop Chrome'],
+				viewport: { width: 390, height: 844 },
+				deviceScaleFactor: 1,
+				isMobile: true,
+				hasTouch: true,
+				colorScheme: 'light'
+			}
+		},
+		{
+			name: 'mobile-dark',
+			use: {
+				...devices['Desktop Chrome'],
+				viewport: { width: 390, height: 844 },
+				deviceScaleFactor: 1,
+				isMobile: true,
+				hasTouch: true,
+				colorScheme: 'dark'
+			}
 		}
 	]
 });
