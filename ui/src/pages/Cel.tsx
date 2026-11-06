@@ -63,7 +63,7 @@ export function CelPage() {
 							rel="noreferrer"
 							target="_blank"
 						>
-							<ExternalLink size={16} /> CEL reference
+							<ExternalLink size={16} /> Upstream CEL reference
 						</a>
 						<button className="button primary" type="button" disabled={loading} onClick={run}>
 							<Play size={16} />
