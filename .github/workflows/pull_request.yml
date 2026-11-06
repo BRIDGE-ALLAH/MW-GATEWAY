@@ -317,7 +317,7 @@ jobs:
     - name: Compare desktop and mobile light/dark UI
       working-directory: ui
       env:
-        VISUAL_BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event_name == 'push' && github.event.before || github.event.repository.default_branch }}
+        VISUAL_BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.sha }}
       run: node tests/visual-regression/compare.ts --base "$VISUAL_BASE"
     - name: Upload visual regression report
       if: always()
