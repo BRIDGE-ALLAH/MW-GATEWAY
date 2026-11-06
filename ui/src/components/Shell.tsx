@@ -16,7 +16,6 @@ import {
 	KeyRound,
 	LogOut,
 	Menu,
-	MessageSquarePlus,
 	Moon,
 	Network,
 	Play,
