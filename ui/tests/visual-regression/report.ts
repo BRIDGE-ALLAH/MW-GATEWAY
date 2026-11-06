@@ -35,6 +35,7 @@ export type ComparisonRow = {
 	route: string;
 	title: string;
 	theme: string;
+	viewport: 'desktop' | 'mobile';
 	before: string;
 	after: string;
 	diff?: string;
@@ -66,15 +67,21 @@ export function createReport(output: string) {
 	const specs = (suites: JSONReportSuite[]): JSONReportSuite['specs'] =>
 		suites.flatMap(suite => [...suite.specs, ...specs(suite.suites ?? [])]);
 	const cases = specs(report.suites);
+	const projects = [
+		{ name: 'light', theme: 'light', viewport: 'desktop' },
+		{ name: 'dark', theme: 'dark', viewport: 'desktop' },
+		{ name: 'mobile-light', theme: 'light', viewport: 'mobile' },
+		{ name: 'mobile-dark', theme: 'dark', viewport: 'mobile' }
+	] as const;
 	const rows = routes.flatMap(([name, route, title]) =>
-		['light', 'dark'].map((theme): ComparisonRow => {
+		projects.map((project): ComparisonRow => {
 			const test = cases
 				.filter(spec => spec.title === testTitle(title))
 				.flatMap(spec => spec.tests)
-				.find(item => item.projectName === theme);
+				.find(item => item.projectName === project.name);
 			const result = test?.results.at(-1);
-			const before = `reference/${theme}/${name}-full-page.png`;
-			const after = `current/${theme}/${name}-full-page.png`;
+			const before = `reference/${project.name}/${name}-full-page.png`;
+			const after = `current/${project.name}/${name}-full-page.png`;
 			const outcome = classify(name, result);
 			const complete =
 				outcome !== 'missing' &&
@@ -83,15 +90,16 @@ export function createReport(output: string) {
 			const attachment = result?.attachments.find(item => item.path?.endsWith('-diff.png'));
 			let diff: string | undefined;
 			if (attachment?.path && resolve(attachment.path).startsWith(`${resolve(output)}/`)) {
-				diff = `diff/${theme}/${name}.png`;
-				mkdirSync(join(output, 'diff', theme), { recursive: true });
+				diff = `diff/${project.name}/${name}.png`;
+				mkdirSync(join(output, 'diff', project.name), { recursive: true });
 				copyFileSync(attachment.path, join(output, diff));
 			}
 			return {
 				name,
 				route,
 				title,
-				theme,
+				theme: project.theme,
+				viewport: project.viewport,
 				before,
 				after,
 				diff,
