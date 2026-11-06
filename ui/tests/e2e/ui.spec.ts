@@ -1889,7 +1889,7 @@ test('login loads without protected API requests and preserves the return destin
 	await page.goto('/login?returnTo=%2Fui%2Fllm%2Fmodels%3Ftab%3Dall');
 	await expect(page.getByRole('heading', { name: 'Sign in', exact: true })).toBeVisible();
 	await expect(
-		page.getByRole('img', { name: 'agentgateway' }).filter({ visible: true })
+		page.getByRole('img', { name: 'Moonwitness Gateway' }).filter({ visible: true })
 	).toBeVisible();
 	await expect(page.getByRole('navigation')).toHaveCount(0);
 	await page.evaluate(() => document.fonts.ready);

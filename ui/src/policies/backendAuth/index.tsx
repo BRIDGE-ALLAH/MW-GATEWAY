@@ -111,9 +111,7 @@ export function BackendAuthPolicyEditor(props: {
 			</FieldGroup>
 
 			{kind === 'passthrough' ? (
-				<>
-					<PassthroughFields value={passthrough} help={props.help} onChange={setPassthrough} />
-				</>
+				<PassthroughFields value={passthrough} help={props.help} onChange={setPassthrough} />
 			) : (
 				<>
 					{error ? (

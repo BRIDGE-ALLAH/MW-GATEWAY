@@ -23,7 +23,19 @@ function prepare(phase: Phase) {
 	) {
 		throw new Error(`${phase} dependency installation failed. See install_${phase}.log.`);
 	}
-	if (step(`build_${phase}`, 'pnpm', ['build', '--mode', 'e2e'], cwd)) {
+	// The reference build is used only to render baseline screenshots. Generate
+	// its schema assets, then skip its TypeScript check so unrelated pre-existing
+	// type errors on the base commit cannot prevent a visual comparison. The
+	// candidate still runs the full build and typecheck.
+	if (
+		phase === 'reference' &&
+		step('generate_schema_reference', 'pnpm', ['generate-schema'], cwd)
+	) {
+		throw new Error('Reference schema generation failed. See generate_schema_reference.log.');
+	}
+	const buildArgs =
+		phase === 'reference' ? ['exec', 'vite', 'build', '--mode', 'e2e'] : ['build', '--mode', 'e2e'];
+	if (step(`build_${phase}`, 'pnpm', buildArgs, cwd)) {
 		throw new Error(`${phase} UI build failed. See build_${phase}.log.`);
 	}
 }

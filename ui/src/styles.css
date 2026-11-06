@@ -30,9 +30,13 @@
 	--pink-glow: rgba(212, 0, 90, 0.18);
 	--cyan-glow: rgba(0, 153, 179, 0.18);
 	--accent-glow: rgba(122, 99, 0, 0.25);
-	--font-sans: 'Geist Sans', 'Inter', 'Aptos', 'Segoe UI Variable', 'Segoe UI', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--font-sans:
+		'Geist Sans', 'Inter', 'Aptos', 'Segoe UI Variable', 'Segoe UI', ui-sans-serif, system-ui,
+		-apple-system, BlinkMacSystemFont, sans-serif;
 	--font-display: 'Impact', 'Anton', 'Arial Black', 'Franklin Gothic Heavy', sans-serif;
-	--mono: 'JetBrains Mono', 'DejaVu Sans Mono', 'Liberation Mono', 'SFMono-Regular', 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+	--mono:
+		'JetBrains Mono', 'DejaVu Sans Mono', 'Liberation Mono', 'SFMono-Regular', 'Cascadia Code',
+		'Roboto Mono', Consolas, monospace;
 	font-family: var(--font-sans);
 }
 
@@ -117,8 +121,16 @@ body {
 	min-width: 320px;
 	background-color: var(--bg);
 	background-image:
-		radial-gradient(circle at 12% 0%, color-mix(in srgb, var(--pink) 5%, transparent), transparent 36%),
-		radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--cyan) 5%, transparent), transparent 34%);
+		radial-gradient(
+			circle at 12% 0%,
+			color-mix(in srgb, var(--pink) 5%, transparent),
+			transparent 36%
+		),
+		radial-gradient(
+			circle at 88% 12%,
+			color-mix(in srgb, var(--cyan) 5%, transparent),
+			transparent 34%
+		);
 	background-attachment: fixed;
 	color: var(--text);
 	font-size: 14px;
@@ -197,7 +209,7 @@ a {
 	width: 54px;
 	height: 3px;
 	background: linear-gradient(90deg, var(--accent) 0 52%, var(--pink) 52% 78%, var(--cyan) 78%);
-	content: "";
+	content: '';
 }
 
 .brand small {
