@@ -525,7 +525,8 @@ claude --model ${JSON.stringify(args.model)}`
 		{
 			id: 'claude-desktop',
 			title: 'Claude Desktop',
-			description: 'Connect Claude Desktop to Moonwitness Gateway using third-party inference settings.',
+			description:
+				'Connect Claude Desktop to Moonwitness Gateway using third-party inference settings.',
 			icon: 'claude',
 			steps: [
 				<>
