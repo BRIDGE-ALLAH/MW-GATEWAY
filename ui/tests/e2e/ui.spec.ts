@@ -170,7 +170,7 @@ test('onboards all surfaces from a completely empty config', async ({ page }) =>
 	const gateway = await mockGateway(page, {});
 	await page.goto('/');
 
-	await expect(page.getByRole('heading', { name: 'Welcome to Agentgateway' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Welcome to Moonwitness Gateway' })).toBeVisible();
 	await expect(page.getByRole('button', { name: /LLM/ })).toBeVisible();
 	await expect(page.getByRole('button', { name: /MCP/ })).toBeVisible();
 	await page.getByRole('button', { name: /^Enable Traffic/ }).click();
@@ -179,7 +179,7 @@ test('onboards all surfaces from a completely empty config', async ({ page }) =>
 	expect(gateway.postedConfigs[0].gateways).toMatchObject({
 		public: { port: 8080 }
 	});
-	await expect(page.getByRole('heading', { name: 'Welcome to Agentgateway' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Welcome to Moonwitness Gateway' })).toBeVisible();
 	await expect(page.locator('.nav-list').getByRole('link', { name: 'Gateways' })).toBeVisible();
 
 	await page.getByRole('button', { name: /LLM/ }).click();
@@ -187,14 +187,14 @@ test('onboards all surfaces from a completely empty config', async ({ page }) =>
 	expect(gateway.postedConfigs[1].llm).toEqual({
 		gateways: 'public'
 	});
-	await expect(page.getByRole('heading', { name: 'Welcome to Agentgateway' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Welcome to Moonwitness Gateway' })).toBeVisible();
 
 	await page.getByRole('button', { name: /MCP/ }).click();
 	await expect.poll(() => gateway.postedConfigs.length).toBe(3);
 	expect(gateway.postedConfigs[2].mcp).toEqual({
 		gateways: 'public'
 	});
-	await expect(page.getByRole('heading', { name: 'Welcome to Agentgateway' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Welcome to Moonwitness Gateway' })).toBeVisible();
 	await page.getByRole('button', { name: 'Continue' }).click();
 	await expect(page.getByRole('heading', { name: 'Gateway Overview' })).toBeVisible();
 });
@@ -346,7 +346,7 @@ test('onboards LLM and MCP onto the UI gateway when present', async ({ page }) =
 	});
 	await page.goto('/');
 
-	await expect(page.getByRole('heading', { name: 'Welcome to Agentgateway' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Welcome to Moonwitness Gateway' })).toBeVisible();
 	await expect(page.getByRole('button', { name: /^Traffic enabled/ })).toBeDisabled();
 
 	await page.getByRole('button', { name: /LLM/ }).click();

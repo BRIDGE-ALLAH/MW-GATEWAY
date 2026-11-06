@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - "main"
+  workflow_dispatch:
 
 concurrency:
   # GitHub concurrency keeps at most one running and one pending run per group.
